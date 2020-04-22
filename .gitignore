@@ -1,3 +1,9 @@
-node_modules
-logs
+/node_modules
+/logs
 .env
+.DS_Store
+.npm-cache
+.npmrc
+.nvmrc
+*.code-workspace
+package-lock.json
