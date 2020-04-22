@@ -2,12 +2,13 @@
   "name": "todo-node-server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "server.mjs",
   "engines": {
-    "node": ">=13.12.0"
+    "node": ">=12.16.2"
   },
   "scripts": {
-    "start": "node server.js"
+    "start": "node --experimental-modules server.mjs",
+    "dev": "nodemon --watch server --watch lib --experimental-modules server.mjs"
   },
   "author": "samdjro",
   "license": "ISC",
@@ -18,7 +19,11 @@
     "express": "^4.17.1",
     "firebase": "^7.14.0",
     "firebase-admin": "^8.10.0",
+    "lodash.isinteger": "^4.0.4",
     "lodash.tointeger": "^4.0.4",
     "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
   }
 }
